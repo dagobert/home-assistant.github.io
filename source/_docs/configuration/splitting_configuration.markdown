@@ -10,13 +10,13 @@ footer: true
 redirect_from: /topics/splitting_configuration/
 ---
 
-So you've been using Home Assistant for a while now and your configuration.yaml file brings people to tears or you simply want to start off with the distributed approach, here's how to "split the configuration.yaml" into more manageable (read: humanly readable) pieces.
+So you've been using Home Assistant for a while now and your configuration.yaml file is getting longer and longer. It is getting more and more difficult to edit and maintain it. Splitting the `configuration.yaml` into more manageable (read: humanly readable) pieces is the solution to your rescue.
 
-First off, several community members have sanitized (read: without api keys/passwords etc) versions of their configurations available for viewing, you can see a list of them [here](/cookbook/#example-configurationyaml).
+<p class="note">Several community members have versions of their configurations available for viewing, you can see a list of them [here](/cookbook/#example-configurationyaml). Their configurations are very extensive and require a deep understanding the available possibilities. Hence, you should read this documentation first.</p>
 
-As commenting code doesn't always happen, please read on for the details.
+### {% linkable_title Introduction %} ###
 
-Now despite the logical assumption that the `configuration.yaml` will be replaced by this process it will in fact remain, albeit in a much less cluttered form.
+First and foremost, the `configuration.yaml` will remain the central file for your Home Assistant configuration. In this file you will be able to specify other files or even directories in which parts of your configuration is located in the furure. This is called "splitting the configuration" into multiple files preferred in a logical fashion and a much less less cluttered form.
 
 In this lighter version we will still need what could be called the core snippet:
 
